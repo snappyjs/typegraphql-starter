@@ -1,0 +1,51 @@
+{
+  "name": "barq-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node-dev -r tsconfig-paths/register ./src/index.ts",
+    "drop:test": "NODE_ENV=test ts-node -r tsconfig-paths/register ./src/__test__/dropDatabase.ts",
+    "drop:dev": "NODE_ENV=development ts-node -r tsconfig-paths/register ./src/__test__/dropDatabase.ts",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+  },
+  "author": "Tommy Dronkers",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apollo-server-express": "^2.19.2",
+    "bcrypt": "^5.0.0",
+    "class-validator": "^0.13.1",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typedi": "^0.10.0",
+    "typeorm": "^0.2.30",
+    "typeorm-typedi-extensions": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/faker": "^5.1.6",
+    "@types/jest": "^26.0.20",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "apollo-server-testing": "^2.19.2",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "faker": "^5.2.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "ts-jest": "^26.5.0",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typeorm-transactional-tests": "^1.1.5",
+    "typescript": "^4.1.3"
+  }
+}

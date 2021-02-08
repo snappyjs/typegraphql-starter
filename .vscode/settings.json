@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "barq_test",
+            "database": "barq_test",
+            "username": "postgres",
+            "password": "password"
+        }
+    ]
+}

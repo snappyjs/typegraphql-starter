@@ -1,0 +1,28 @@
+[
+  {
+    "name": "development",
+    "type": "postgres",
+    "username": "postgres",
+    "password": "password",
+    "port": 5432,
+    "database": "barq_development",
+    "entities": ["src/**/*.type.ts", "src/**/*.type.js"],
+    "synchronize": true,
+    "dropSchema": true,
+    "logging": true
+  },
+  {
+    "name": "test",
+    "type": "postgres",
+    "username": "postgres",
+    "password": "password",
+    "port": 5432,
+    "database": "barq_test",
+    "entities": ["src/**/*.type.ts"],
+    "synchronize": true,
+    "dropSchema": true,
+    "migrations": ["migrations/*.ts"],
+    "logging": false,
+    "migrationsRun": true
+  }
+]

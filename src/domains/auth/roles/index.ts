@@ -1,0 +1,1 @@
+export { RoleResolver } from './Role.resolver';
